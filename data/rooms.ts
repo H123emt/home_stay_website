@@ -1,0 +1,148 @@
+import type { Room } from "@/types/room";
+
+export const rooms: Room[] = [
+  {
+    id: "r001",
+    slug: "misty-pine-suite",
+    name: "Misty Pine Suite",
+    tagline: "Suspended in clouds, grounded in silence",
+    description:
+      "Perched at 1,800m above sea level, the Misty Pine Suite offers an uninterrupted panorama of rolling khasi hills draped in perpetual mist. Hand-hewn timber walls, a stone fireplace, and locally-woven textiles create an atmosphere of quiet opulence. Wake to clouds drifting through your private deck.",
+    category: "suite",
+    maxGuests: 2,
+    bedrooms: 1,
+    bathrooms: 1,
+    sizeSqFt: 620,
+    images: [
+      { src: "/images/rooms/home_stay2.png", alt: "Misty Pine Suite bedroom with mountain view", width: 1920, height: 1080 },
+      { src: "/images/rooms/home_stay3.png", alt: "Private deck overlooking valley", width: 1920, height: 1080 },
+      { src: "/images/rooms/home_stay2.png", alt: "Stone fireplace and reading nook", width: 1920, height: 1080 },
+      { src: "/images/rooms/home_stay3.png", alt: "Ensuite bathroom with rain shower", width: 1920, height: 1080 },
+    ],
+    amenities: [
+      { id: "a1", label: "High-speed WiFi", icon: "wifi" },
+      { id: "a2", label: "Artisan Coffee Bar", icon: "coffee" },
+      { id: "a3", label: "Rain Shower", icon: "bath" },
+      { id: "a4", label: "Mountain View", icon: "mountain" },
+      { id: "a5", label: "Stone Fireplace", icon: "fire" },
+      { id: "a6", label: "Organic Toiletries", icon: "leaf" },
+    ],
+    pricing: [
+      { label: "Standard", pricePerNight: 18500, minNights: 1 },
+      { label: "Long Stay (5+ nights)", pricePerNight: 15500, minNights: 5 },
+    ],
+    featured: true,
+    available: true,
+    elevation: "1,800m",
+    view: "Valley & Cloud Sea",
+  },
+  {
+    id: "r002",
+    slug: "forest-canopy-treehouse",
+    name: "Forest Canopy Treehouse",
+    tagline: "Live at treetop height, breathe ancient air",
+    description:
+      "A masterwork of sustainable architecture, the Forest Canopy Treehouse is built around a 200-year-old oak using traditional Khasi craftsmanship. Three levels of living space connected by rope bridges, floor-to-ceiling glass walls, and a crow's nest meditation platform make this a once-in-a-lifetime stay.",
+    category: "treehouse",
+    maxGuests: 3,
+    bedrooms: 1,
+    bathrooms: 1,
+    sizeSqFt: 480,
+    images: [
+      { src: "/images/rooms/home_stay2.png", alt: "Treehouse exterior at dusk", width: 1920, height: 1080 },
+      { src: "/images/rooms/home_stay3.png", alt: "Interior glass wall view", width: 1920, height: 1080 },
+      { src: "/images/rooms/home_stay2.png", alt: "Crow's nest meditation platform", width: 1920, height: 1080 },
+      { src: "/images/rooms/home_stay3.png", alt: "Rope bridge connecting levels", width: 1920, height: 1080 },
+    ],
+    amenities: [
+      { id: "a1", label: "High-speed WiFi", icon: "wifi" },
+      { id: "a2", label: "Artisan Coffee Bar", icon: "coffee" },
+      { id: "a3", label: "Forest Shower", icon: "droplets" },
+      { id: "a4", label: "Canopy View", icon: "mountain" },
+      { id: "a5", label: "Natural Ventilation", icon: "wind" },
+      { id: "a6", label: "Organic Toiletries", icon: "leaf" },
+    ],
+    pricing: [
+      { label: "Standard", pricePerNight: 22000, minNights: 2 },
+      { label: "Long Stay (4+ nights)", pricePerNight: 19000, minNights: 4 },
+    ],
+    featured: true,
+    available: true,
+    elevation: "1,650m",
+    view: "Ancient Forest Canopy",
+  },
+  {
+    id: "r003",
+    slug: "slate-valley-cottage",
+    name: "Slate Valley Cottage",
+    tagline: "Stone walls, warm light, limitless quiet",
+    description:
+      "Constructed entirely from locally-quarried wet slate, this two-bedroom cottage embodies the raw geological soul of Meghalaya. A private garden with a fire pit, clawfoot bathtub with valley views, and a fully-equipped kitchen for those who prefer the intimacy of their own space.",
+    category: "cottage",
+    maxGuests: 4,
+    bedrooms: 2,
+    bathrooms: 2,
+    sizeSqFt: 950,
+    images: [
+      { src: "/images/rooms/home_stay2.png", alt: "Slate cottage exterior with garden", width: 1920, height: 1080 },
+      { src: "/images/rooms/home_stay3.png", alt: "Clawfoot bath with valley view", width: 1920, height: 1080 },
+      { src: "/images/rooms/home_stay2.png", alt: "Private garden fire pit at night", width: 1920, height: 1080 },
+      { src: "/images/rooms/home_stay3.png", alt: "Master bedroom interior", width: 1920, height: 1080 },
+    ],
+    amenities: [
+      { id: "a1", label: "High-speed WiFi", icon: "wifi" },
+      { id: "a2", label: "Full Kitchen", icon: "coffee" },
+      { id: "a3", label: "Clawfoot Bath", icon: "bath" },
+      { id: "a4", label: "Valley View", icon: "mountain" },
+      { id: "a5", label: "Private Fire Pit", icon: "fire" },
+      { id: "a6", label: "Organic Toiletries", icon: "leaf" },
+    ],
+    pricing: [
+      { label: "Standard", pricePerNight: 26000, minNights: 2 },
+      { label: "Long Stay (5+ nights)", pricePerNight: 22000, minNights: 5 },
+    ],
+    featured: true,
+    available: true,
+    elevation: "1,550m",
+    view: "Valley & Waterfall",
+  },
+  {
+    id: "r004",
+    slug: "ridge-top-villa",
+    name: "Ridge Top Villa",
+    tagline: "The summit of solitude and splendour",
+    description:
+      "Our most exclusive offering. The Ridge Top Villa commands 270-degree views across three valleys from its dramatic perch on the highest accessible point of the property. Three bedrooms, a private infinity plunge pool, a chef's kitchen, and dedicated butler service redefine what a mountain escape can be.",
+    category: "villa",
+    maxGuests: 6,
+    bedrooms: 3,
+    bathrooms: 3,
+    sizeSqFt: 1800,
+    images: [
+      { src: "/images/rooms/home_stay3.png", alt: "Villa exterior with infinity pool", width: 1920, height: 1080 },
+      { src: "/images/rooms/home_stay2.png", alt: "270 degree valley panorama", width: 1920, height: 1080 },
+      { src: "/images/rooms/home_stay3.png", alt: "Master suite interior", width: 1920, height: 1080 },
+      { src: "/images/rooms/home_stay2.png", alt: "Outdoor dining terrace at sunset", width: 1920, height: 1080 },
+    ],
+    amenities: [
+      { id: "a1", label: "High-speed WiFi", icon: "wifi" },
+      { id: "a2", label: "Chef's Kitchen", icon: "coffee" },
+      { id: "a3", label: "Spa Bathrooms", icon: "bath" },
+      { id: "a4", label: "360° Panorama", icon: "mountain" },
+      { id: "a5", label: "Infinity Plunge Pool", icon: "droplets" },
+      { id: "a6", label: "Butler Service", icon: "leaf" },
+    ],
+    pricing: [
+      { label: "Standard", pricePerNight: 58000, minNights: 2 },
+      { label: "Long Stay (7+ nights)", pricePerNight: 49000, minNights: 7 },
+    ],
+    featured: false,
+    available: true,
+    elevation: "2,050m",
+    view: "Three-Valley Panorama",
+  },
+];
+
+export const getFeaturedRooms = (): Room[] => rooms.filter((r) => r.featured);
+export const getRoomBySlug = (slug: string): Room | undefined =>
+  rooms.find((r) => r.slug === slug);
