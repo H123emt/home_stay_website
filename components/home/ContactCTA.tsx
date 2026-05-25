@@ -11,7 +11,7 @@ import Button from "@/components/common/Button";
 
 export default function ContactCTA() {
   return (
-    <section className="relative overflow-hidden bg-[#112211] py-32 sm:py-40">
+    <section className="relative overflow-hidden bg-[#1B331B] py-32 sm:py-40">
       <div className="absolute inset-0">
         <Image
           src="/images/home/home_stay2.png"
@@ -32,7 +32,7 @@ export default function ContactCTA() {
       <Container size="md" className="relative z-10 text-center">
         <div className="flex flex-col items-center gap-8">
           <ScrollReveal direction="up" blur delay={0}>
-            <span className="text-[10px] font-light uppercase tracking-[0.4em] text-[#6B7A52]">
+            <span className="text-[20px] font-normal uppercase tracking-[0.4em] text-[#6B7A52]">
               Begin Your Stay
             </span>
           </ScrollReveal>

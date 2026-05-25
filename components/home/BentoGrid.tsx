@@ -154,15 +154,15 @@ export default function BentoGrid() {
             <BentoCard delay={0.35} className="h-full p-6 sm:p-8 flex flex-col gap-5 bg-[#112211] min-h-[220px]">
               <Leaf className="w-5 h-5 text-[#6B7A52]" />
               <div className="flex flex-col gap-3">
-                <p className="text-[10px] font-light uppercase tracking-[0.3em] text-[#6B7A52]">
+                <p className="text-[16px] font-medium uppercase tracking-[0.3em] text-[#2E4A2E]">
                   Sustainability
                 </p>
-                <p className="font-serif text-xl font-light text-[#F9FBF9] leading-snug">
+                <p className="font-serif text-xl font-light text-dark leading-snug">
                   Carbon-negative since 2021. Every structure built with local
                   hands, local materials.
                 </p>
               </div>
-              <p className="text-xs font-light text-[#F9FBF9]/40 leading-relaxed">
+              <p className="text-xs font-light text-dark leading-relaxed">
                 Rainwater harvesting · Solar power · Zero single-use plastics ·
                 Direct community employment
               </p>
@@ -173,7 +173,7 @@ export default function BentoGrid() {
             <BentoCard href="/experiences/living-root-bridge-trek" delay={0.4} className="h-full min-h-[220px]">
               <div className="relative h-full min-h-[220px]">
                 <Image
-                  src="/images/gallery/home_stay3.png"
+                  src="/images/gallery/home_stay2.png"
                   alt="Double-decker living root bridge"
                   fill
                   className="object-cover transition-transform duration-700 group-hover:scale-[1.03]"

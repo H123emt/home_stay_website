@@ -47,9 +47,12 @@ export default function HeroSection() {
             variants={containerVariants}
             initial="hidden"
             animate="visible"
-            className="flex flex-col gap-6 max-w-3xl"
+            className="flex flex-col gap-6 max-w-3xl items-center text-center lg:items-start lg:text-left"
           >
-            <motion.div variants={itemVariants} className="flex items-center gap-4">
+            <motion.div
+              variants={itemVariants}
+              className="flex items-center justify-center gap-4 lg:justify-start"
+            >
               <span className="h-px w-12 bg-[#B08D57]/60" />
               <span className="text-[10px] font-light uppercase tracking-[0.4em] text-[#F9FBF9]/70">
                 Meghalaya · East Khasi Hills · 1,800m
@@ -68,16 +71,20 @@ export default function HeroSection() {
 
             <motion.p
               variants={itemVariants}
-              className="max-w-lg text-base sm:text-lg font-light leading-relaxed text-[#F9FBF9]/60"
+              className="max-w-lg mx-auto lg:mx-0 text-base sm:text-lg font-light leading-relaxed text-[#F9FBF9]/60"
             >
               A private wilderness retreat in the wettest place on Earth.
               Ancient forest, living architecture, and absolute silence.
             </motion.p>
 
-            <motion.div variants={itemVariants} className="flex flex-wrap items-center gap-4 pt-2">
+            <motion.div
+              variants={itemVariants}
+              className="flex flex-wrap items-center justify-center gap-4 pt-2 lg:justify-start"
+            >
               <Button variant="ochre" size="lg">
                 <Link href="/booking">Reserve a Stay</Link>
               </Button>
+
               <Button
                 variant="ghost"
                 size="lg"
@@ -89,24 +96,6 @@ export default function HeroSection() {
           </motion.div>
         </div>
       </div>
-
-      <motion.button
-        initial={{ opacity: 0, y: 10 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 2, duration: 0.8, ease: LUXURY_EASE }}
-        onClick={scrollToContent}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-2 text-[#F9FBF9]/50 hover:text-[#F9FBF9] transition-colors duration-300 group"
-        aria-label="Scroll down"
-      >
-        <span className="text-[9px] font-light uppercase tracking-[0.35em]">Discover</span>
-        <motion.div
-          animate={{ y: [0, 6, 0] }}
-          transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
-        >
-          <ArrowDown className="w-4 h-4" />
-        </motion.div>
-      </motion.button>
-
       <div className="absolute bottom-8 right-8 sm:right-16 z-20 hidden sm:flex flex-col items-end gap-1">
         <span className="text-[9px] font-light uppercase tracking-[0.3em] text-[#F9FBF9]/40">
           {SITE_NAME} · Est. 2019

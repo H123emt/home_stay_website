@@ -6,7 +6,7 @@ import {
   Youtube,
   Mail,
   Phone,
-  MapPin
+  MapPin,
 } from "lucide-react";
 
 import {
@@ -26,22 +26,23 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-[#112211] text-[#F9FBF9]">
+    <footer className="bg-[#112211] text-white">
       <Container size="xl" className="pt-20 pb-16">
         <div className="grid grid-cols-1 gap-16 lg:grid-cols-12 lg:gap-8">
           <div className="lg:col-span-4">
             <ScrollReveal direction="up" blur delay={0}>
               <div className="flex flex-col gap-6">
                 <div>
-                  <p className="font-serif text-4xl font-light tracking-[0.1em] text-[#F9FBF9]">
+                  <p className="font-serif text-4xl font-light tracking-[0.1em] text-white">
                     {SITE_NAME}
                   </p>
-                  <p className="mt-1 text-[10px] font-light uppercase tracking-[0.4em] text-[#F9FBF9]/40">
+
+                  <p className="mt-2 text-xs font-light uppercase tracking-[0.4em] text-white">
                     {SITE_TAGLINE}
                   </p>
                 </div>
 
-                <p className="max-w-sm text-sm font-light leading-relaxed text-[#F9FBF9]/50">
+                <p className="max-w-sm text-base font-light leading-relaxed text-white">
                   A private retreat suspended in the mist of the Khasi Hills.
                   Where ancient forest, living architecture, and the art of deep
                   rest converge.
@@ -52,37 +53,37 @@ export default function Footer() {
                     href={SOCIAL_LINKS.instagram}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[#F9FBF9]/40 transition-colors duration-300 hover:text-[#F9FBF9]"
+                    className="text-sm text-white transition-colors duration-300 hover:text-[#B08D57]"
                     aria-label="Instagram"
                   >Instagram
-                    {/* <Instagram className="h-4 w-4" /> */}
+                    
                   </Link>
 
                   <Link
                     href={SOCIAL_LINKS.facebook}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[#F9FBF9]/40 transition-colors duration-300 hover:text-[#F9FBF9]"
+                    className="text-sm text-white transition-colors duration-300 hover:text-[#B08D57]"
                     aria-label="Facebook"
-                  >FaceBook
-                    {/* <Facebook className="h-4 w-4" /> */}
+                  >
+                    Facebook
                   </Link>
 
                   <Link
                     href={SOCIAL_LINKS.youtube}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[#F9FBF9]/40 transition-colors duration-300 hover:text-[#F9FBF9]"
+                    className="text-sm text-white transition-colors duration-300 hover:text-[#B08D57]"
                     aria-label="YouTube"
-                  > YouTube
-                    {/* <Youtube className="h-4 w-4" /> */}
+                  >
+                    YouTube
                   </Link>
                 </div>
               </div>
             </ScrollReveal>
           </div>
 
-         <div className="grid grid-cols-2 gap-8 sm:grid-cols-4 lg:col-span-5 lg:grid-cols-4">
+          <div className="grid grid-cols-2 gap-8 sm:grid-cols-4 lg:col-span-5 lg:grid-cols-4">
             {footerNav.map((section, sectionIdx) => (
               <ScrollReveal
                 key={section.title}
@@ -91,7 +92,7 @@ export default function Footer() {
                 delay={0.1 + sectionIdx * 0.05}
               >
                 <div className="flex flex-col gap-4">
-                  <p className="text-[10px] font-light uppercase tracking-[0.3em] text-[#6B7A52]">
+                  <p className="text-xs font-medium uppercase tracking-[0.3em] text-white">
                     {section.title}
                   </p>
 
@@ -100,7 +101,7 @@ export default function Footer() {
                       <li key={link.href}>
                         <Link
                           href={link.href}
-                          className="text-xs font-light text-[#F9FBF9]/50 transition-colors duration-300 hover:text-[#F9FBF9]"
+                          className="text-sm font-light text-white transition-colors duration-300 hover:text-[#B08D57]"
                         >
                           {link.label}
                         </Link>
@@ -115,7 +116,7 @@ export default function Footer() {
           <div className="lg:col-span-3">
             <ScrollReveal direction="up" blur delay={0.3}>
               <div className="flex flex-col gap-4">
-                <p className="text-[10px] font-light uppercase tracking-[0.3em] text-[#6B7A52]">
+                <p className="text-xs font-medium uppercase tracking-[0.3em] text-white">
                   Contact
                 </p>
 
@@ -125,8 +126,8 @@ export default function Footer() {
                       href={`mailto:${CONTACT_EMAIL}`}
                       className="group flex items-start gap-3"
                     >
-                      <Mail className="mt-0.5 h-3.5 w-3.5 flex-shrink-0 text-[#F9FBF9]/30 transition-colors duration-300 group-hover:text-[#B08D57]" />
-                      <span className="text-xs font-light text-[#F9FBF9]/50 transition-colors duration-300 group-hover:text-[#F9FBF9]">
+                      <Mail className="mt-0.5 h-4 w-4 flex-shrink-0 text-white transition-colors duration-300 group-hover:text-[#B08D57]" />
+                      <span className="text-sm font-light text-white transition-colors duration-300 group-hover:text-[#B08D57]">
                         {CONTACT_EMAIL}
                       </span>
                     </a>
@@ -137,8 +138,8 @@ export default function Footer() {
                       href={`tel:${CONTACT_PHONE.replace(/\s/g, "")}`}
                       className="group flex items-start gap-3"
                     >
-                      <Phone className="mt-0.5 h-3.5 w-3.5 flex-shrink-0 text-[#F9FBF9]/30 transition-colors duration-300 group-hover:text-[#B08D57]" />
-                      <span className="text-xs font-light text-[#F9FBF9]/50 transition-colors duration-300 group-hover:text-[#F9FBF9]">
+                      <Phone className="mt-0.5 h-4 w-4 flex-shrink-0 text-white transition-colors duration-300 group-hover:text-[#B08D57]" />
+                      <span className="text-sm font-light text-white transition-colors duration-300 group-hover:text-[#B08D57]">
                         {CONTACT_PHONE}
                       </span>
                     </a>
@@ -146,8 +147,8 @@ export default function Footer() {
 
                   <li>
                     <div className="flex items-start gap-3">
-                      <MapPin className="mt-0.5 h-3.5 w-3.5 flex-shrink-0 text-[#F9FBF9]/30" />
-                      <span className="text-xs font-light leading-relaxed text-[#F9FBF9]/50">
+                      <MapPin className="mt-0.5 h-4 w-4 flex-shrink-0 text-white" />
+                      <span className="text-sm font-light leading-relaxed text-white">
                         {CONTACT_ADDRESS}
                       </span>
                     </div>
@@ -159,10 +160,10 @@ export default function Footer() {
         </div>
       </Container>
 
-      <div className="border-t border-[#F9FBF9]/8" />
+      <div className="border-t border-white/20" />
       <Container size="xl" className="py-6">
         <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
-          <p className="text-[10px] font-light tracking-wider text-[#F9FBF9]/30">
+          <p className="text-xs font-light tracking-wider text-white">
             © {currentYear} {SITE_NAME}. All rights reserved.
           </p>
 
@@ -175,7 +176,7 @@ export default function Footer() {
               <Link
                 key={item}
                 href={`/${item.toLowerCase().replace(/\s+/g, "-")}`}
-                className="text-[10px] font-light tracking-wider text-[#F9FBF9]/30 transition-colors duration-300 hover:text-[#F9FBF9]/60"
+                className="text-xs font-light tracking-wider text-white transition-colors duration-300 hover:text-[#B08D57]"
               >
                 {item}
               </Link>
@@ -183,7 +184,6 @@ export default function Footer() {
           </div>
         </div>
       </Container>
-
       <div className="h-1 bg-gradient-to-r from-[#112211] via-[#B08D57]/40 to-[#112211]" />
     </footer>
   );

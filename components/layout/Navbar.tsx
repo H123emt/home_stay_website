@@ -40,7 +40,7 @@ export default function Navbar() {
         className={cn(
           "fixed top-0 left-0 right-0 z-50 transition-all duration-500",
           scrolled
-            ? "bg-[#F9FBF9]/95 backdrop-blur-md shadow-sm py-4"
+            ? "bg-[#F9FBF9]/95 backdrop-blur-md shadow-md py-4"
             : "bg-transparent py-6"
         )}
       >
@@ -48,7 +48,7 @@ export default function Navbar() {
           <Link href="/" className="flex flex-col leading-none group">
             <motion.span
               className={cn(
-                "font-serif text-xl font-light tracking-[0.15em] transition-colors duration-300",
+                "font-serif text-4xl font-light tracking-[0.15em] transition-colors duration-300",
                 isDark ? "text-[#112211]" : "text-[#F9FBF9]"
               )}
             >
@@ -56,7 +56,7 @@ export default function Navbar() {
             </motion.span>
             <span
               className={cn(
-                "text-[8px] font-light uppercase tracking-[0.4em] transition-colors duration-300",
+                "text-[10px] font-light uppercase tracking-[0.4em] transition-colors duration-300",
                 isDark ? "text-[#6B7A52]" : "text-[#F9FBF9]/60"
               )}
             >
@@ -70,7 +70,7 @@ export default function Navbar() {
                 key={link.href}
                 href={link.href}
                 className={cn(
-                  "relative text-[11px] font-light uppercase tracking-[0.25em] transition-colors duration-300",
+                  "relative text-[18px] font-normal drop-shadow-[0_0_12px_rgba(249,251,249,1) uppercase tracking-[0.25em] transition-colors duration-300",
                   "after:absolute after:-bottom-1 after:left-0 after:h-px after:w-0 after:transition-all after:duration-300",
                   "hover:after:w-full",
                   isDark
@@ -93,7 +93,7 @@ export default function Navbar() {
               size="sm"
               className={cn(
                 !isDark &&
-                  "border-[#F9FBF9]/50 text-[#F9FBF9] hover:bg-[#F9FBF9]/10 hover:border-[#F9FBF9]"
+                  "border-[#F9FBF9]/50 text-[#F9FBF9] hover:bg-[#F9FBF9]/10 hover:border-[#F9FBF9] rounded-[5px]"
               )}
             >
               <Link href="/booking">Reserve a Stay</Link>
