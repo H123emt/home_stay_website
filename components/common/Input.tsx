@@ -20,8 +20,8 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
           <label
             htmlFor={inputId}
             className={cn(
-              "text-[10px] font-light uppercase tracking-[0.2em]",
-              light ? "text-[#F9FBF9]/60" : "text-[#112211]/50"
+              "text-[14px] font-medium  tracking-[0.2em]",
+              light ? "text-[#F9FBF9]" : "text-[#081008]"
             )}
           >
             {label}

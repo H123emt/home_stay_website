@@ -10,6 +10,7 @@ export interface NavSection {
 }
 
 export const primaryNav: NavLink[] = [
+  { label: "Home" , href: "/"},
   { label: "Stays", href: "/rooms" },
   { label: "Experiences", href: "/experiences" },
   { label: "Gallery", href: "/gallery" },

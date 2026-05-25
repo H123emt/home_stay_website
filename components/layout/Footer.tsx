@@ -146,8 +146,8 @@ export default function Footer() {
                   </li>
 
                   <li>
-                    <div className="flex items-start justify-center gap-3 md:justify-start max-w-xs">
-                      <MapPin className="mt-0.5 h-4 w-4 flex-shrink-0 text-white" />
+                    <div className="flex items-start justify-center gap-2 md:justify-start ">
+                      <MapPin className="mt-0.5 h-4 w-4  flex-shrink-0 text-white" />
                       <span className="text-sm font-light leading-relaxed text-white">
                         {CONTACT_ADDRESS}
                       </span>

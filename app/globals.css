@@ -27,7 +27,6 @@ body {
   font-family: var(--font-serif);
 }
 
-/* Swiper overrides */
 .swiper-pagination-bullet {
   background: rgba(255,255,255,0.5) !important;
   width: 6px !important;
@@ -41,7 +40,6 @@ body {
   border-radius: 3px !important;
 }
 
-/* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 6px;
 }
@@ -53,7 +51,6 @@ body {
   border-radius: 3px;
 }
 
-/* Date input styling */
 input[type="date"]::-webkit-calendar-picker-indicator {
   opacity: 0;
   cursor: pointer;

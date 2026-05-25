@@ -24,11 +24,10 @@ export default function ContactCTA() {
       </div>
 
       <div className="absolute inset-0 bg-gradient-to-b from-[#112211]/60 via-[#112211]/40 to-[#112211]/90" />
-
       <div className="pointer-events-none absolute inset-x-0 top-1/2 -translate-y-1/2">
         <div className="h-px bg-gradient-to-r from-transparent via-[#B08D57]/20 to-transparent" />
       </div>
-
+      
       <Container size="md" className="relative z-10 text-center">
         <div className="flex flex-col items-center gap-8">
           <ScrollReveal direction="up" blur delay={0}>

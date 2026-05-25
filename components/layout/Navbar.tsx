@@ -57,7 +57,7 @@ export default function Navbar() {
             <span
               className={cn(
                 "text-[10px] font-light uppercase tracking-[0.4em] transition-colors duration-300",
-                isDark ? "text-[#6B7A52]" : "text-[#F9FBF9]/60"
+                isDark ? "text-[#112211]" : "text-[#F9FBF9]"
               )}
             >
               Meghalaya
@@ -74,7 +74,7 @@ export default function Navbar() {
                   "after:absolute after:-bottom-1 after:left-0 after:h-px after:w-0 after:transition-all after:duration-300",
                   "hover:after:w-full",
                   isDark
-                    ? "text-[#112211]/70 hover:text-[#112211] after:bg-[#112211]"
+                    ? "text-[#112211] hover:text-[#112211] after:bg-[#112211]"
                     : "text-[#F9FBF9]/70 hover:text-[#F9FBF9] after:bg-[#F9FBF9]",
                   pathname === link.href &&
                     (isDark

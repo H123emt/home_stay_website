@@ -44,6 +44,16 @@ export default function ContactPage() {
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
     setSent(true);
+
+    setTimeout(() => {
+    setSent(false);
+    setForm({
+      name: "",
+      email: "",
+      subject: "",
+      message: "",
+    });
+  }, 3000); 
   };
 
   return (
@@ -59,7 +69,6 @@ export default function ContactPage() {
         </ScrollReveal>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 mt-16">
-          {/* Contact Info */}
           <ScrollReveal>
             <div className="space-y-8">
               {CONTACT_INFO.map((item, i) => (
@@ -83,24 +92,10 @@ export default function ContactPage() {
                 </motion.div>
               ))}
 
-              {/* Map placeholder */}
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: 0.4, ease: EASE }}
-                className="w-full h-52 rounded-2xl bg-[#112211]/8 overflow-hidden relative mt-8 flex items-center justify-center"
-              >
-                <div className="text-center">
-                  <MapPin className="w-8 h-8 text-[#6B7A52] mx-auto mb-2" />
-                  <p className="text-[#2D3748] text-sm">Cherrapunjee, Meghalaya</p>
-                  <p className="text-[#6B7A52] text-xs mt-1">25.2720° N, 91.7349° E</p>
-                </div>
-              </motion.div>
+             
             </div>
           </ScrollReveal>
 
-          {/* Form */}
           <ScrollReveal>
             {sent ? (
               <motion.div
@@ -123,14 +118,15 @@ export default function ContactPage() {
                   label="Full Name"
                   value={form.name}
                   onChange={(e) => update("name", e.target.value)}
-                  placeholder="Arjun Sharma"
+                  placeholder="Abc Sharma"
+                  required
                 />
                 <Input
                   label="Email Address"
                   type="email"
                   value={form.email}
                   onChange={(e) => update("email", e.target.value)}
-                  placeholder="arjun@example.com"
+                  placeholder="abc@example.com"
                 />
                 <Input
                   label="Subject"
