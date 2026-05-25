@@ -11,7 +11,7 @@ import Button from "@/components/common/Button";
 
 export default function ContactCTA() {
   return (
-    <section className="relative overflow-hidden bg-[#1B331B] py-32 sm:py-40">
+    <section className="relative overflow-hidden bg-[#1B331B]/70 py-32 sm:py-40">
       <div className="absolute inset-0">
         <Image
           src="/images/home/home_stay2.png"
@@ -32,7 +32,7 @@ export default function ContactCTA() {
       <Container size="md" className="relative z-10 text-center">
         <div className="flex flex-col items-center gap-8">
           <ScrollReveal direction="up" blur delay={0}>
-            <span className="text-[20px] font-normal uppercase tracking-[0.4em] text-[#6B7A52]">
+            <span className="text-[20px] font-normal uppercase tracking-[0.4em] text-[#F9FBF9]">
               Begin Your Stay
             </span>
           </ScrollReveal>
@@ -54,7 +54,7 @@ export default function ContactCTA() {
           </ScrollReveal>
 
           <ScrollReveal direction="up" blur delay={0.2}>
-            <p className="max-w-lg text-base font-light leading-relaxed text-[#F9FBF9]/50">
+            <p className="max-w-lg text-base font-light leading-relaxed text-[#F9FBF9]">
               Every stay at Aranya begins with a conversation. Tell us when
               you'd like to arrive and what you're seeking — we'll take care
               of everything else.
@@ -92,7 +92,7 @@ export default function ContactCTA() {
                 className="group flex items-center gap-2"
               >
                 <Mail className="h-3.5 w-3.5 text-[#6B7A52] transition-colors duration-300 group-hover:text-[#B08D57]" />
-                <span className="text-xs font-light text-[#F9FBF9]/40 transition-colors duration-300 group-hover:text-[#F9FBF9]/70">
+                <span className="text-md font-light text-[#F9FBF9] transition-colors duration-300 group-hover:text-[#F9FBF9]/70">
                   {CONTACT_EMAIL}
                 </span>
               </a>
@@ -104,22 +104,12 @@ export default function ContactCTA() {
                 className="group flex items-center gap-2"
               >
                 <Phone className="h-3.5 w-3.5 text-[#6B7A52] transition-colors duration-300 group-hover:text-[#B08D57]" />
-                <span className="text-xs font-light text-[#F9FBF9]/40 transition-colors duration-300 group-hover:text-[#F9FBF9]/70">
+                <span className="text-md font-light text-[#F9FBF9] transition-colors duration-300 group-hover:text-[#F9FBF9]/70">
                   {CONTACT_PHONE}
                 </span>
               </a>
             </div>
-          </ScrollReveal>
-
-          <ScrollReveal direction="up" blur delay={0.5}>
-            <div className="flex items-center gap-4 pt-6">
-              <span className="h-px w-16 bg-[#B08D57]/30" />
-              <span className="text-[9px] font-light uppercase tracking-[0.4em] text-[#F9FBF9]/20">
-                Aranya · Meghalaya · Est. 2019
-              </span>
-              <span className="h-px w-16 bg-[#B08D57]/30" />
-            </div>
-          </ScrollReveal>
+          </ScrollReveal>         
         </div>
       </Container>
     </section>

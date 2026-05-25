@@ -48,17 +48,7 @@ export default function HeroSection() {
             initial="hidden"
             animate="visible"
             className="flex flex-col gap-6 max-w-3xl items-center text-center lg:items-start lg:text-left"
-          >
-            <motion.div
-              variants={itemVariants}
-              className="flex items-center justify-center gap-4 lg:justify-start"
-            >
-              <span className="h-px w-12 bg-[#B08D57]/60" />
-              <span className="text-[10px] font-light uppercase tracking-[0.4em] text-[#F9FBF9]/70">
-                Meghalaya · East Khasi Hills · 1,800m
-              </span>
-            </motion.div>
-
+          >          
             <motion.h1
               variants={itemVariants}
               className="font-serif font-light leading-[1.05] text-[#F9FBF9]"
@@ -71,7 +61,7 @@ export default function HeroSection() {
 
             <motion.p
               variants={itemVariants}
-              className="max-w-lg mx-auto lg:mx-0 text-base sm:text-lg font-light leading-relaxed text-[#F9FBF9]/60"
+              className="max-w-lg mx-auto lg:mx-0 text-base sm:text-lg font-medium leading-relaxed text-white"
             >
               A private wilderness retreat in the wettest place on Earth.
               Ancient forest, living architecture, and absolute silence.
@@ -96,12 +86,7 @@ export default function HeroSection() {
           </motion.div>
         </div>
       </div>
-      <div className="absolute bottom-8 right-8 sm:right-16 z-20 hidden sm:flex flex-col items-end gap-1">
-        <span className="text-[9px] font-light uppercase tracking-[0.3em] text-[#F9FBF9]/40">
-          {SITE_NAME} · Est. 2019
-        </span>
-        <span className="h-px w-16 bg-[#B08D57]/40" />
-      </div>
+      
     </section>
   );
 }

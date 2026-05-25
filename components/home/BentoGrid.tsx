@@ -50,9 +50,6 @@ export default function BentoGrid() {
       <Container size="xl">
         <ScrollReveal direction="up" blur delay={0}>
           <div className="mb-12 flex flex-col gap-2">
-            <span className="text-[10px] font-light uppercase tracking-[0.35em] text-[#6B7A52]">
-              The retreat
-            </span>
             <h2
               className="font-serif font-light text-[#112211] leading-tight"
               style={{ fontSize: "clamp(2rem, 4vw, 3.5rem)" }}
@@ -77,7 +74,7 @@ export default function BentoGrid() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#112211]/70 via-transparent to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-8">
-                  <span className="text-[10px] font-light uppercase tracking-[0.3em] text-[#F9FBF9]/60">
+                  <span className="text-[12px] font-semibold uppercase tracking-[0.3em] text-white">
                     Our Stays
                   </span>
                   <p className="mt-1 font-serif text-2xl sm:text-3xl font-light text-[#F9FBF9] leading-tight">
@@ -85,8 +82,8 @@ export default function BentoGrid() {
                     <br />
                     disappear
                   </p>
-                  <div className="mt-4 flex items-center gap-2 text-[#B08D57]">
-                    <span className="text-xs font-light uppercase tracking-[0.2em]">
+                  <div className="mt-4 flex items-center gap-2 text-[#ffff]">
+                    <span className="text-xs font-light uppercase tracking-[0.2em] border-b-2 border-[#B08D57] pb-1">
                       Explore rooms
                     </span>
                     <ArrowUpRight className="w-3.5 h-3.5" />
@@ -105,7 +102,7 @@ export default function BentoGrid() {
               <Mountain className="w-5 h-5 text-[#6B7A52]" />
               <div>
                 <p className="font-serif text-4xl font-light text-[#112211]">2,050</p>
-                <p className="mt-1 text-[10px] font-light uppercase tracking-[0.25em] text-[#112211]/40">
+                <p className="mt-1 text-[10px] font-medium uppercase tracking-[0.25em] text-dark">
                   Metres elevation
                 </p>
               </div>
@@ -117,7 +114,7 @@ export default function BentoGrid() {
               <CloudRain className="w-5 h-5 text-[#6B7A52]" />
               <div>
                 <p className="font-serif text-4xl font-light text-[#112211]">11,871</p>
-                <p className="mt-1 text-[10px] font-light uppercase tracking-[0.25em] text-[#112211]/40">
+                <p className="mt-1 text-[10px] font-medium uppercase tracking-[0.25em] text-dark">
                   mm annual rainfall · wettest on Earth
                 </p>
               </div>
@@ -139,11 +136,11 @@ export default function BentoGrid() {
                   <p className="font-serif text-xl font-light text-[#F9FBF9]">
                     Ancient forest experiences
                   </p>
-                  <div className="mt-2 flex items-center gap-2 text-[#B08D57]">
-                    <span className="text-[10px] font-light uppercase tracking-[0.2em]">
+                  <div className="mt-2 flex items-center gap-2 text-white">
+                    <span className="text-[10px]  font-semibold uppercase tracking-[0.2em] border-b-2 border-[#B08D57] pb-1">
                       Explore
                     </span>
-                    <ArrowUpRight className="w-3 h-3" />
+                    <ArrowUpRight className="w-3 h-4" />
                   </div>
                 </div>
               </div>

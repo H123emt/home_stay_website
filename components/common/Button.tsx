@@ -20,15 +20,15 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 
 const variantClasses: Record<ButtonVariant, string> = {
   primary:
-    "bg-[#112211] text-[#F9FBF9] hover:bg-[#1a331a] border border-[#112211] hover:border-[#1a331a]",
+    "bg-[#112211] rounded-md text-[#F9FBF9] hover:bg-[#1a331a] border border-[#112211] hover:border-[#1a331a]",
   secondary:
-    "bg-[#2D3748] text-[#F9FBF9] hover:bg-[#3d4a5c] border border-[#2D3748]",
+    "bg-[#2D3748] rounded-md text-[#F9FBF9] hover:bg-[#3d4a5c] border border-[#2D3748]",
   ghost:
-    "bg-transparent text-[#112211] hover:bg-[#112211]/5 border border-transparent",
+    "bg-transparent rounded-md text-[#112211] hover:bg-[#112211]/5 border border-transparent",
   outline:
-    "bg-transparent text-[#112211] border border-[#112211]/30 hover:border-[#112211] hover:bg-[#112211]/5",
+    "bg-transparent rounded-md text-[#112211] border border-[#112211]/30 hover:border-[#112211] hover:bg-[#112211]/5",
   ochre:
-    "bg-[#B08D57] text-[#F9FBF9] hover:bg-[#9a7a47] border border-[#B08D57] hover:border-[#9a7a47]",
+    "bg-[#B08D57] rounded-md text-[#F9FBF9] hover:bg-[#9a7a47] border border-[#B08D57] hover:border-[#9a7a47]",
 };
 
 const sizeClasses: Record<ButtonSize, string> = {

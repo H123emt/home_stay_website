@@ -33,10 +33,7 @@ export default function BookingPreview() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center">
           <div className="flex flex-col gap-8">
             <ScrollReveal direction="up" blur delay={0}>
-              <div className="flex flex-col gap-4">
-                <span className="text-[10px] font-light uppercase tracking-[0.35em] text-[#6B7A52]">
-                  Reserve
-                </span>
+              <div className="flex flex-col gap-4">               
                 <h2
                   className="font-serif font-light text-[#112211] leading-tight"
                   style={{ fontSize: "clamp(2rem, 4vw, 3.5rem)" }}
@@ -45,7 +42,7 @@ export default function BookingPreview() {
                   <br />
                   <span className="text-[#B08D57]">awaits.</span>
                 </h2>
-                <p className="text-base font-light leading-relaxed text-[#2D3748]/60 max-w-md">
+                <p className="text-base font-dark leading-relaxed text-[#2D3748] max-w-md">
                   Every stay at Aranya is curated, not just booked. Tell us your
                   dates and we'll craft the ideal experience — from room selection
                   to private experiences.
@@ -63,7 +60,7 @@ export default function BookingPreview() {
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3">
                     <span className="mt-1.5 w-1 h-1 rounded-full bg-[#B08D57] flex-shrink-0" />
-                    <span className="text-sm font-light text-[#2D3748]/60">{item}</span>
+                    <span className="text-sm font-dark text-[#2D3748]">{item}</span>
                   </li>
                 ))}
               </ul>
@@ -76,7 +73,7 @@ export default function BookingPreview() {
                 </Button>
                 <Link
                   href="/contact"
-                  className="text-xs font-light uppercase tracking-[0.2em] text-[#112211]/50 hover:text-[#112211] transition-colors duration-300 underline underline-offset-4"
+                  className="text-xs font-dark uppercase tracking-[0.2em] text-[#112211] hover:text-[#112211] transition-colors duration-300 underline underline-offset-4"
                 >
                   Ask a question
                 </Link>
@@ -91,16 +88,16 @@ export default function BookingPreview() {
               transition={{ duration: 0.4, ease: LUXURY_EASE }}
             >
               <div className="flex items-center justify-between">
-                <p className="text-[10px] font-light uppercase tracking-[0.3em] text-[#6B7A52]">
+                <p className="text-[10px] font-dark uppercase tracking-[0.3em] text-[#112211]">
                   Quick Estimate
                 </p>
-                <span className="text-[10px] font-light text-[#112211]/30">
+                <span className="text-[10px] font-dark text-[#112211]">
                   Sample · 3 nights
                 </span>
               </div>
 
               <div className="flex flex-col gap-2">
-                <label className="text-[10px] font-light uppercase tracking-[0.2em] text-[#112211]/40">
+                <label className="text-[10px] font-dark uppercase tracking-[0.2em] text-[#112211]">
                   Select Room
                 </label>
                 <div className="grid grid-cols-1 gap-1.5">
@@ -111,11 +108,11 @@ export default function BookingPreview() {
                       className={`flex items-center justify-between px-4 py-3 border text-left transition-all duration-300 ${
                         selectedRoom === room.slug
                           ? "border-[#112211] bg-[#112211]/3"
-                          : "border-[#112211]/10 hover:border-[#112211]/30"
+                          : "border-[#112211]/10 hover:border-[#112211]/50"
                       }`}
                     >
-                      <span className="text-sm font-light text-[#112211]">{room.name}</span>
-                      <span className="text-xs font-light text-[#B08D57]">
+                      <span className="text-sm font-dark text-[#112211]">{room.name}</span>
+                      <span className="text-xs font-dark text-[#B08D57]">
                         {formatCurrency(room.pricing[0].pricePerNight)}/night
                       </span>
                     </button>
@@ -127,14 +124,14 @@ export default function BookingPreview() {
                 <div className="flex flex-col gap-1 p-3 border border-[#112211]/10">
                   <div className="flex items-center gap-1.5">
                     <CalendarDays className="w-3 h-3 text-[#6B7A52]" />
-                    <span className="text-[9px] font-light uppercase tracking-wider text-[#112211]/40">Check-in</span>
+                    <span className="text-[9px] font-dark uppercase tracking-wider text-[#112211]">Check-in</span>
                   </div>
                   <p className="text-sm font-light text-[#112211]">{formatDateShort(checkIn)}</p>
                 </div>
                 <div className="flex flex-col gap-1 p-3 border border-[#112211]/10">
                   <div className="flex items-center gap-1.5">
                     <CalendarDays className="w-3 h-3 text-[#6B7A52]" />
-                    <span className="text-[9px] font-light uppercase tracking-wider text-[#112211]/40">Check-out</span>
+                    <span className="text-[9px] font-dark uppercase tracking-wider text-[#112211]">Check-out</span>
                   </div>
                   <p className="text-sm font-light text-[#112211]">{formatDateShort(checkOut)}</p>
                 </div>
@@ -143,7 +140,7 @@ export default function BookingPreview() {
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-2">
                   <Users className="w-4 h-4 text-[#6B7A52]" />
-                  <span className="text-sm font-light text-[#112211]">Guests</span>
+                  <span className="text-sm font-dark text-[#112211]">Guests</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <button
@@ -172,13 +169,13 @@ export default function BookingPreview() {
                   { label: "Taxes & fees (18% GST)", value: formatCurrency(taxes) },
                 ].map(({ label, value }) => (
                   <div key={label} className="flex items-center justify-between">
-                    <span className="text-xs font-light text-[#112211]/40">{label}</span>
-                    <span className="text-xs font-light text-[#112211]">{value}</span>
+                    <span className="text-xs font-dark text-[#112211]">{label}</span>
+                    <span className="text-xs font-dark text-[#112211]">{value}</span>
                   </div>
                 ))}
                 <div className="flex items-center justify-between pt-2 border-t border-[#112211]/8">
-                  <span className="text-sm font-light text-[#112211] uppercase tracking-wider">Total</span>
-                  <span className="font-serif text-xl font-light text-[#112211]">
+                  <span className="text-sm font-dark text-[#112211] uppercase tracking-wider">Total</span>
+                  <span className="font-serif text-xl font-dark text-[#112211]">
                     {formatCurrency(total)}
                   </span>
                 </div>
@@ -188,7 +185,7 @@ export default function BookingPreview() {
                 <Link href={bookingUrl}>Reserve This Stay</Link>
               </Button>
 
-              <p className="text-center text-[9px] font-light uppercase tracking-wider text-[#112211]/30">
+              <p className="text-center text-[12px] font-dark uppercase tracking-wider text-[#112211]">
                 No payment required to reserve · Free cancellation
               </p>
             </motion.div>

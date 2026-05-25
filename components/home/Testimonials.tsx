@@ -86,7 +86,6 @@ const slideVariants: Variants = {
         <div className="flex flex-col lg:flex-row gap-16 lg:gap-24">
           <div className="lg:w-64 flex-shrink-0 flex flex-col justify-between gap-8">
             <SectionTitle
-              eyebrow="Testimonials"
               title={
                 <>
                   Heard
@@ -179,7 +178,7 @@ const slideVariants: Variants = {
                   "{t.title}"
                 </h3>
 
-                <p className="text-base font-light leading-relaxed text-[#F9FBF9]/55 max-w-2xl">
+                <p className="text-base font-light leading-relaxed text-[#F9FBF9] max-w-2xl">
                   {t.body}
                 </p>
 

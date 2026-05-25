@@ -44,13 +44,4 @@ export const footerNav: NavSection[] = [
       { label: "Getting Here", href: "/contact#getting-here" },
     ],
   },
-  {
-    title: "About",
-    links: [
-      { label: "Our Story", href: "/about" },
-      { label: "Sustainability", href: "/about#sustainability" },
-      { label: "The Team", href: "/about#team" },
-      { label: "Press", href: "/press" },
-    ],
-  },
 ];

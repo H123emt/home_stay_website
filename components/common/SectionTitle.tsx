@@ -31,7 +31,7 @@ export default function SectionTitle({
         <ScrollReveal delay={0} direction="up" blur>
           <span
             className={cn(
-              "inline-block text-[10px] font-light uppercase tracking-[0.3em]",
+              "inline-block text-[10px] font-medium uppercase tracking-[0.3em]",
               light ? "text-[#F9FBF9]/50" : "text-[#6B7A52]"
             )}
           >
@@ -54,8 +54,8 @@ export default function SectionTitle({
         <ScrollReveal delay={0.2} direction="up" blur>
           <p
             className={cn(
-              "max-w-xl font-light leading-relaxed text-base",
-              light ? "text-[#F9FBF9]/60" : "text-[#2D3748]/60"
+              "max-w-xl font-medium leading-relaxed text-base",
+              light ? "text-[#F9FBF9]/60" : "text-[#2D3748]/80"
             )}
           >
             {subtitle}

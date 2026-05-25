@@ -31,7 +31,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-16 lg:grid-cols-12 lg:gap-8">
           <div className="lg:col-span-4">
             <ScrollReveal direction="up" blur delay={0}>
-              <div className="flex flex-col gap-6">
+              <div className="flex flex-col gap-6 items-center text-center md:items-start md:text-left">
                 <div>
                   <p className="font-serif text-4xl font-light tracking-[0.1em] text-white">
                     {SITE_NAME}
@@ -42,13 +42,13 @@ export default function Footer() {
                   </p>
                 </div>
 
-                <p className="max-w-sm text-base font-light leading-relaxed text-white">
+                <p className="max-w-sm text-base font-light leading-relaxed text-white mx-auto md:mx-0">
                   A private retreat suspended in the mist of the Khasi Hills.
                   Where ancient forest, living architecture, and the art of deep
                   rest converge.
                 </p>
 
-                <div className="flex items-center gap-5">
+                <div className="flex items-center justify-center gap-5 md:justify-start">
                   <Link
                     href={SOCIAL_LINKS.instagram}
                     target="_blank"
@@ -56,7 +56,7 @@ export default function Footer() {
                     className="text-sm text-white transition-colors duration-300 hover:text-[#B08D57]"
                     aria-label="Instagram"
                   >Instagram
-                    
+
                   </Link>
 
                   <Link
@@ -83,7 +83,7 @@ export default function Footer() {
             </ScrollReveal>
           </div>
 
-          <div className="grid grid-cols-2 gap-8 sm:grid-cols-4 lg:col-span-5 lg:grid-cols-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 text-center sm:text-center md:text-left lg:col-span-5 lg:grid-cols-3">
             {footerNav.map((section, sectionIdx) => (
               <ScrollReveal
                 key={section.title}
@@ -91,7 +91,7 @@ export default function Footer() {
                 blur
                 delay={0.1 + sectionIdx * 0.05}
               >
-                <div className="flex flex-col gap-4">
+                <div className="flex flex-col gap-4 items-center md:items-start">
                   <p className="text-xs font-medium uppercase tracking-[0.3em] text-white">
                     {section.title}
                   </p>
@@ -115,16 +115,16 @@ export default function Footer() {
 
           <div className="lg:col-span-3">
             <ScrollReveal direction="up" blur delay={0.3}>
-              <div className="flex flex-col gap-4">
+              <div className="flex flex-col gap-4 items-center text-center md:items-start md:text-left w-full">
                 <p className="text-xs font-medium uppercase tracking-[0.3em] text-white">
                   Contact
                 </p>
 
-                <ul className="flex flex-col gap-4">
+                <ul className="flex flex-col gap-4 items-center md:items-start w-full">
                   <li>
                     <a
                       href={`mailto:${CONTACT_EMAIL}`}
-                      className="group flex items-start gap-3"
+                      className="group flex items-start justify-center gap-3 md:justify-start"
                     >
                       <Mail className="mt-0.5 h-4 w-4 flex-shrink-0 text-white transition-colors duration-300 group-hover:text-[#B08D57]" />
                       <span className="text-sm font-light text-white transition-colors duration-300 group-hover:text-[#B08D57]">
@@ -136,7 +136,7 @@ export default function Footer() {
                   <li>
                     <a
                       href={`tel:${CONTACT_PHONE.replace(/\s/g, "")}`}
-                      className="group flex items-start gap-3"
+                      className="group flex items-start justify-center gap-3 md:justify-start"
                     >
                       <Phone className="mt-0.5 h-4 w-4 flex-shrink-0 text-white transition-colors duration-300 group-hover:text-[#B08D57]" />
                       <span className="text-sm font-light text-white transition-colors duration-300 group-hover:text-[#B08D57]">
@@ -146,7 +146,7 @@ export default function Footer() {
                   </li>
 
                   <li>
-                    <div className="flex items-start gap-3">
+                    <div className="flex items-start justify-center gap-3 md:justify-start max-w-xs">
                       <MapPin className="mt-0.5 h-4 w-4 flex-shrink-0 text-white" />
                       <span className="text-sm font-light leading-relaxed text-white">
                         {CONTACT_ADDRESS}
@@ -167,7 +167,7 @@ export default function Footer() {
             © {currentYear} {SITE_NAME}. All rights reserved.
           </p>
 
-          <div className="flex items-center gap-6">
+          <div className="flex flex-col items-center gap-3 sm:flex-row sm:gap-6">
             {[
               "Privacy Policy",
               "Terms of Service",

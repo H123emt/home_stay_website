@@ -23,8 +23,8 @@ export const LUXURY_EASE: [number, number, number, number] = [0.16, 1, 0.3, 1];
 
 export const COLORS = {
   background: "#F9FBF9",
-  primary: "#112211",
-  secondary: "#2D3748",
+  primary: "#061206fd",
+  secondary: "#14171e",
   moss: "#6B7A52",
   ochre: "#B08D57",
 } as const;
