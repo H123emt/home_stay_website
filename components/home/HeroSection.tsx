@@ -71,14 +71,15 @@ export default function HeroSection() {
               variants={itemVariants}
               className="flex flex-wrap items-center justify-center gap-4 pt-2 lg:justify-start"
             >
-              <Button variant="ochre" size="lg">
+              <Button variant="ochre" size="lg" 
+              className="font-medium">
                 <Link href="/booking">Reserve a Stay</Link>
               </Button>
 
               <Button
                 variant="ghost"
                 size="lg"
-                className="border border-[#F9FBF9]/30 text-[#F9FBF9] hover:bg-[#F9FBF9]/10 hover:border-[#F9FBF9]/60"
+                className="border border-[#F9FBF9] text-[#F9FBF9] hover:bg-[#F9FBF9] hover:border-[#F9FBF9]/60 hover:text-black font-medium"
               >
                 <Link href="/experiences">Our Experiences</Link>
               </Button>

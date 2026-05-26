@@ -70,7 +70,7 @@ export default function Navbar() {
                 key={link.href}
                 href={link.href}
                 className={cn(
-                  "relative text-[18px] font-normal drop-shadow-[0_0_12px_rgba(249,251,249,1) uppercase tracking-[0.25em] transition-colors duration-300",
+                  "relative text-[20px] font-semibold drop-shadow-[0_0_12px_rgba(249,251,249,1) uppercase tracking-[0.1em] transition-colors duration-300",
                   "after:absolute after:-bottom-1 after:left-0 after:h-px after:w-0 after:transition-all after:duration-300",
                   "hover:after:w-full",
                   isDark
