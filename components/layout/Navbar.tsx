@@ -15,9 +15,12 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [atTop, setAtTop] = useState(true);
-  const pathname = usePathname();
 
-  const isHomePage = pathname === "/";
+  const pathname = usePathname();
+  const transparentPages = ["/", "/restaurant"];
+  const isTransparentPage = transparentPages.includes(pathname);
+ 
+  const isDark = !isTransparentPage || scrolled;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -28,8 +31,6 @@ export default function Navbar() {
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
-  const isDark = !isHomePage || scrolled;
 
   return (
     <>

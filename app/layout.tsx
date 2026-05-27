@@ -1,18 +1,26 @@
 import type { Metadata } from "next";
-import { Playfair_Display, DM_Sans } from "next/font/google";
+// import { Playfair_Display, DM_Sans } from "next/font/google";
+import { Luxurious_Roman } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
  import Footer from "@/components/layout/Footer";
 
-const playfair = Playfair_Display({
-  subsets: ["latin"],
-  variable: "--font-serif",
-  display: "swap",
-});
+// const playfair = Playfair_Display({
+//   subsets: ["latin"],
+//   variable: "--font-serif",
+//   display: "swap",
+// });
 
-const dmSans = DM_Sans({
+// const dmSans = DM_Sans({
+//   subsets: ["latin"],
+//   variable: "--font-sans",
+//   display: "swap",
+// });
+
+const luxuriousRoman = Luxurious_Roman({
   subsets: ["latin"],
-  variable: "--font-sans",
+  variable: "--font-main",
+  weight: "400",
   display: "swap",
 });
 
@@ -34,7 +42,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${playfair.variable} ${dmSans.variable}`}>
+    <html lang="en" className={luxuriousRoman.variable}>
       <body className="bg-[#F9FBF9] font-sans antialiased">
         <Navbar />
         <main>{children}</main>

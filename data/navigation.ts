@@ -15,6 +15,7 @@ export const primaryNav: NavLink[] = [
   { label: "Experiences", href: "/experiences" },
   { label: "Gallery", href: "/gallery" },
   { label: "Contact", href: "/contact" },
+  { label: "Restaurant", href: "/restaurant" },
 ];
 
 export const footerNav: NavSection[] = [

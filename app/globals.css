@@ -2,9 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   --font-serif: "Playfair Display", serif;
   --font-sans: "DM Sans", sans-serif;
+} */
+
+:root {
+  --font-main: "Luxurious Roman", serif;
 }
 
 * {
@@ -18,7 +22,7 @@ html {
 }
 
 body {
-  font-family: var(--font-sans);
+  font-family: var(--font-main);
   background-color: #F9FBF9;
   color: #112211;
 }
